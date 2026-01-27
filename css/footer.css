@@ -1,0 +1,152 @@
+.pro-footer {
+  background-image: linear-gradient(
+      rgba(227, 182, 182, 0.55),
+      rgba(0, 0, 0, 0.55)
+    ),
+    url("home-bg.jpg");
+
+  color: #797a7e;
+  padding: 70px 20px 40px;
+  text-align: center;
+}
+
+/* CTA */
+.footer-cta {
+  margin-bottom: 30px;
+}
+
+.cta-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+   background: linear-gradient(135deg, #3b82f6, #8b5cf6);
+  color: #d4d0d0;
+  padding: 14px 28px;
+  border-radius: 999px;
+  font-weight: 600;
+  text-decoration: none;
+  font-size: 15px;
+  transition: all 0.3s ease;
+}
+
+.cta-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 15px 35px rgba(107, 93, 157, 0.4);
+}
+
+.cta-sub {
+  margin-top: 10px;
+  color: #000000;
+  font-size: 14px;
+}
+
+/* DIVIDER */
+.footer-line {
+  max-width: 1100px;
+  height: 1px;
+  margin: 30px auto;
+  background: linear-gradient(
+    to right,
+    transparent,
+    rgba(140, 149, 161, 0.3),
+    transparent
+  );
+}
+
+/* NOTE */
+.footer-note {
+  max-width: 900px;
+  margin: auto;
+  font-size: 14px;
+  line-height: 1.7;
+  color: #4f545a;
+}
+
+.footer-note span {
+  color: #415671;
+  font-weight: 600;
+}
+
+/* MAIN */
+.footer-main {
+  max-width: 1100px;
+  margin: 30px auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  text-align: left;
+}
+
+.footer-main span {
+  color: #1f2323;
+  font-weight: 600;
+}
+
+.footer-links {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.footer-links a {
+  color: #37393e;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.footer-links a:hover {
+  color: #ffffff;
+  text-decoration: underline;
+}
+
+/* BOTTOM */
+.footer-bottom {
+  max-width: 1100px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.footer-bottom span {
+  color: #404244;
+  font-weight: 600;
+}
+
+/* MINI BUTTON */
+.footer-mini-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: linear-gradient(135deg, #3b82f6, #8b5cf6);
+  color: rgb(177, 170, 170);
+  padding: 10px 18px;
+  border-radius: 12px;
+  font-weight: 600;
+  text-decoration: none;
+  font-size: 14px;
+  transition: all 0.3s ease;
+}
+
+.footer-mini-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 25px rgba(99, 102, 241, 0.4);
+}
+
+p {
+  color: #383636;
+}
+/* ===============================
+   RESPONSIVE
+   =============================== */
+@media (max-width: 768px) {
+  .footer-main,
+  .footer-bottom {
+    flex-direction: column;
+    text-align: center;
+  }
+}

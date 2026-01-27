@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>MIS Executive Projects | Himanshu</title>
+
+  <!--  REMIX ICON (Footer & Icons ke -->
+
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="../css/mis_exe.css">
+<!-- <link rel="stylesheet" href="../css/nav.css"> -->
+<link rel="stylesheet" href="../css/footer.css">
+
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<nav>
+  <div class="nav__content">
+    <div class="logo"><a href="#">Himanshu</a></div>
+    <ul>
+  <li><a href="../index.html">Home</a></li>
+  <li><a href="../about.html">About Me</a></li>
+
+  <!-- PROJECTS DROPDOWN -->
+ <li class="dropdown">
+   <a href="javascript:void(0)" class="projects-toggle">
+  Projects ▾
+</a>
+
+    <ul class="dropdown-menu">
+      <li class="dropdown-title">Portfolio Projects</li>
+
+      <li><a href="mis_executive.html">MIS Executive</a></li>
+      <li><a href="data_analyst.html">Data Analyst</a></li>
+      <li><a href="nlp.html">NLP</a></li>
+      <li><a href="machine_lear.html">Machine Learning</a></li>
+      <li><a href="ai.html">AI / LLM Projects</a></li>
+    </ul>
+  </li>
+
+  <li><a href="../skills.html">Skills</a></li>
+  <li><a href="../contact.html">Contact</a></li>
+</ul>
+<script>
+/* PROJECTS DROPDOWN – CLICK BASED */
+const projectToggle = document.querySelector(".projects-toggle");
+const dropdown = document.querySelector(".dropdown");
+
+projectToggle.addEventListener("click", function (e) {
+  e.preventDefault();
+  dropdown.classList.toggle("open");
+});
+
+/* Close dropdown only when clicking outside */
+document.addEventListener("click", function (e) {
+  if (!dropdown.contains(e.target)) {
+    dropdown.classList.remove("open");
+  }
+});
+</script>
+
+  </div>
+</nav>
+
+<!-- HEADER -->
+<section class="page-header">
+  <h1>MIS Executive Projects</h1>
+  <p>Excel, SQL & MIS dashboards</p>
+</section>
+
+<!-- SWIGGY MIS DASHBOARD PROJECT -->
+<section class="projects-container">
+  <div class="project-card">
+
+    <!-- VIDEO / IMAGE PREVIEW -->
+    <video class="project-video" controls muted>
+      <source src="../assets/videos/swiggy-mis.mp4" type="video/mp4">
+    </video>
+
+    <div class="project-header">
+      <h2>Swiggy Sales MIS Dashboard (Excel)</h2>
+      <span class="project-tag">MIS / Excel</span>
+    </div>
+
+    <p class="project-desc">
+      Built an interactive Excel-based MIS dashboard to analyze Swiggy sales performance,
+      customer behavior, and operational metrics for business reporting.
+    </p>
+
+    <ul class="project-points">
+      <li>Developed an interactive MIS dashboard to track total sales, orders, average order value (AOV), and customer ratings.</li>
+      <li>Analyzed monthly, weekly, and daily sales trends to identify performance patterns and growth opportunities.</li>
+      <li>Performed city-wise and state-wise sales analysis using charts and geographic mapping.</li>
+      <li>Created category-level insights (Veg vs Non-Veg) to understand customer preferences.</li>
+      <li>Implemented dynamic filters and slicers for month, category, and restaurant-level drill-down analysis.</li>
+      <li>Ensured data accuracy through data cleaning, validation, and structured formatting of raw datasets.</li>
+      <li>Delivered management-ready MIS reports to support data-driven decision-making.</li>
+    </ul>
+
+    <div class="project-tools">
+      <span>Excel</span>
+      <span>Power Query</span>
+      <span>Pivot Tables</span>
+      <span>Charts</span>
+      <span>MIS Reporting</span>
+    </div>
+
+    <div class="project-actions">
+      <a href="https://github.com/yourusername/swiggy-mis-dashboard"
+         target="_blank"
+         class="btn btn-primary">
+        View on GitHub
+      </a>
+
+      <button class="btn btn-secondary"
+              onclick="openReport('../assets/reports/swiggy.png')">
+        View Report
+      </button>
+    </div>
+
+  </div>
+</section>
+
+<!-- PROJECT 2 -->
+<section class="projects-container">
+  <div class="project-card">
+
+    <!-- VIDEO -->
+    <video class="project-video" onclick="openVideo(this)" muted>
+      <source src="../assets/videos/sales-mis.mp4" type="video/mp4">
+    </video>
+
+    <div class="project-header">
+      <h2>Sales Performance MIS Dashboard</h2>
+      <span class="project-tag">MIS</span>
+    </div>
+
+    <p class="project-desc">
+      Developed and automated sales MIS dashboards to monitor KPIs, revenue trends,
+      and business performance for management reporting.
+    </p>
+
+    <ul class="project-points">
+      <li>Designed automated daily, weekly, and monthly MIS reports for sales performance tracking.</li>
+      <li>Analyzed revenue growth, regional trends, and sales KPIs to identify performance gaps.</li>
+      <li>Ensured data accuracy and consistency through validation and reconciliation processes.</li>
+      <li>Delivered management-ready dashboards to support data-driven decision-making.</li>
+    </ul>
+
+    <div class="project-tools">
+      <span>Excel</span>
+      <span>SQL</span>
+      <span>Power Query</span>
+       <span>Pivot Tables</span>
+      <span>Charts</span>
+      <span>MIS Reporting</span>
+    </div>
+
+    <!-- ACTION BUTTONS -->
+    <div class="project-actions">
+      <a href="https://github.com/yourusername/mis-dashboard"
+         target="_blank"
+         class="btn btn-primary">View Project</a>
+
+      <button class="btn btn-secondary"
+              onclick="openReport('../assets/reports/sales.png')">
+        View Report
+      </button>
+    </div>
+  </div>
+</section>
+
+
+<!-- project 3 --> 
+
+<section class="projects-container">
+  <div class="project-card">
+
+    <!-- VIDEO -->
+    <video class="project-video" onclick="openVideo(this)" muted>
+      <source src="../assets/videos/sales-mis.mp4" type="video/mp4">
+    </video>
+
+    <div class="project-header">
+      <h2>Marketing Campaign Analysis</h2>
+      <span class="project-tag"></span>
+    </div>
+
+    <p class="project-desc">
+      Revenue & profit analysis  performance for management reporting.
+    </p>
+
+    <ul class="project-points">
+      <li>CTR & ROI</li>
+      <li>Channel performance</li>
+      <li>ROI & conversion analysis.</li>
+    </ul>
+
+    <div class="project-tools">
+      <span>Excel</span>
+      <span>SQL</span>
+      <span>Power Query</span>
+       <span>Pivot Tables</span>
+      <span>Charts</span>
+      <span>MIS Reporting</span>
+    </div>
+
+    <!-- ACTION BUTTONS -->
+    <div class="project-actions">
+      <a href="https://github.com/yourusername/mis-dashboard"
+         target="_blank"
+         class="btn btn-primary">View Project</a>
+
+      <button class="btn btn-secondary"
+              onclick="openReport('../assets/reports/sales.png')">
+        View Report
+      </button>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="pro-footer">
+
+  <!-- TOP CTA -->
+  <!-- <div class="footer-cta">
+    <a href="#" class="cta-btn">
+      <i class="ri-shopping-cart-line"></i>
+      Buy This Template
+      <i class="ri-external-link-line"></i>
+    </a>
+    <p class="cta-sub">
+      Get this professional portfolio template
+    </p>
+  </div> -->
+
+  <div class="footer-line"></div>
+
+  <!-- NOTE -->
+  <p class="footer-note">
+    ⚠️ <span>Handcrafted from scratch</span> with modern technologies.
+    No templates used – every line of code thoughtfully designed and
+    implemented for optimal performance and user experience.
+  </p>
+
+  <div class="footer-line"></div>
+
+  <!-- MAIN -->
+  <div class="footer-main">
+    <p>
+      © 2026 <span>Himanshu</span>. All rights reserved. <br />
+      Made with ❤️ using HTML, CSS & JavaScript
+    </p>
+
+    <div class="footer-links">
+      <a href="#">Privacy Policy</a>
+      <a href="#">Terms of Service</a>
+      <a href="#">Cookie Policy</a>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <p>
+      &lt;/&gt; Portfolio handcrafted by <span>Himanshu</span> ·
+      Professional & Modern Design
+    </p>
+
+    <a href="#" class="footer-mini-btn">
+      <i class="ri-shopping-cart-line"></i> Get Template
+    </a>
+  </div>
+
+</footer>
+
+
+<!-- VIDEO MODAL -->
+<div id="videoModal" class="video-modal">
+  <span onclick="closeVideo()">&times;</span>
+  <video id="modalVideo" controls></video>
+</div>
+
+<!-- IMAGE MODAL -->
+<div id="imageModal" class="image-modal">
+  <span onclick="closeReport()">&times;</span>
+  <img id="reportImg">
+</div>
+
+<script>
+/* VIDEO MODAL */
+function openVideo(video){
+  const modal = document.getElementById("videoModal");
+  const modalVideo = document.getElementById("modalVideo");
+  modal.style.display = "block";
+  modalVideo.src = video.querySelector("source").src;
+  modalVideo.play();
+}
+function closeVideo(){
+  const modalVideo = document.getElementById("modalVideo");
+  modalVideo.pause();
+  modalVideo.src = "";
+  document.getElementById("videoModal").style.display = "none";
+}
+
+/* IMAGE REPORT MODAL */
+function openReport(src){
+  document.getElementById("imageModal").style.display = "block";
+  document.getElementById("reportImg").src = src;
+}
+function closeReport(){
+  document.getElementById("imageModal").style.display = "none";
+}
+
+/* Outside click close */
+document.querySelectorAll(".video-modal,.image-modal").forEach(modal=>{
+  modal.onclick=function(e){
+    if(e.target===modal){
+      modal.style.display="none";
+      const v=document.getElementById("modalVideo");
+      if(v){v.pause();v.src="";}
+    }
+  }
+});
+</script>
+
+</body>
+</html>

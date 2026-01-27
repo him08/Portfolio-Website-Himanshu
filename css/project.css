@@ -1,0 +1,227 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
+
+:root {
+  --primary-color: #6366f1;
+  --primary-dark: #4f46e5;
+  --text-dark: #1f2937;
+  --max-width: 1200px;
+}
+
+/* =======================
+   RESET + GLOBAL
+======================= */
+
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Inter", system-ui, sans-serif;
+  background: linear-gradient(180deg, #f8fafc, #eef2ff);
+  color: #1f2937;
+  background-image: linear-gradient(
+      rgba(202, 198, 198, 0.55),
+      rgba(135, 112, 112, 0.55)
+    ),
+    url("home-bg.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+/* ======================================
+   PROJECTS SECTION
+   ====================================== */
+.projects-section {
+  margin-top: auto ;
+  padding: 60px 20px 80px;
+  background-image: linear-gradient(
+      rgba(199, 194, 194, 0.55),
+      rgba(147, 141, 141, 0.55)
+    ),
+    url("home-bg.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  text-align: center;
+}
+
+.projects-title {
+    margin-top: 40px;
+  font-size: 2.4rem;
+  font-weight: 700;
+  color: #111827;
+}
+
+.projects-subtitle {
+  margin-top: 10px;
+  font-size: 0.95rem;
+  color: #6b7280;
+}
+
+/* ======================================
+   PROJECT GRID
+   ====================================== */
+.projects-grid {
+  max-width: 1200px;
+  margin: 70px auto 0;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 45px 35px;
+}
+
+/* ======================================
+   CLICKABLE PROJECT CARD
+   ====================================== */
+.project-card {
+  display: block;
+  text-align: left;
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-6px);
+}
+
+/* IMAGE */
+.project-card img {
+  width: 100%;
+  height: 210px;
+  object-fit: cover;
+  border-radius: 8px;
+  background: #f3f4f6;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+}
+
+/* TITLE */
+.project-card h3 {
+  margin-top: 15px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #111827;
+}
+
+/* DESCRIPTION */
+.project-card p {
+  margin-top: 6px;
+  font-size: 0.9rem;
+  line-height: 1.6;
+  color: #6b7280;
+}
+
+.project-card:hover h3 {
+  color: #6366f1;
+}
+
+/* ======================================
+   PROJECT DETAIL PAGES (shared)
+   ====================================== */
+.project-detail {
+  margin-top: 50px;
+  text-align: left;
+}
+
+.project-detail h3 {
+  margin-bottom: 10px;
+  color: #111827;
+}
+
+.project-detail img,
+.project-detail video {
+  width: 100%;
+  max-width: 900px;
+  border-radius: 10px;
+  margin: 15px 0;
+}
+
+.project-detail a {
+  display: inline-block;
+  margin-top: 10px;
+  color: #6366f1;
+  font-weight: 600;
+}
+
+/* ======================================
+   RESPONSIVE
+   ====================================== */
+@media (max-width: 1024px) {
+  .projects-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .projects-page {
+    padding-top: 110px;
+  }
+
+  .projects-title {
+    font-size: 2rem;
+  }
+
+  .projects-grid {
+    grid-template-columns: 1fr;
+    gap: 35px;
+  }
+
+  .project-card img {
+    height: 200px;
+  }
+}
+/* ===============================
+   PREMIUM DARK FOOTER
+   =============================== */
+
+.pro-footer {
+  background-image: linear-gradient(
+      rgba(227, 182, 182, 0.55),
+      rgba(103, 100, 100, 0.55)
+    ),
+    url("home-bg.jpg");
+
+  color: #797a7e;
+  padding: 70px 20px 40px;
+  text-align: center;
+}
+
+/* CTA */
+.footer-cta {
+  margin-bottom: 30px;
+}
+
+.cta-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+   background: linear-gradient(135deg, #3b82f6, #8b5cf6);
+  color: #d4d0d0;
+  padding: 14px 28px;
+  border-radius: 999px;
+  font-weight: 600;
+  text-decoration: none;
+  font-size: 15px;
+  transition: all 0.3s ease;
+}
+
+.cta-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 15px 35px rgba(107, 93, 157, 0.4);
+}
+
+.cta-sub {
+  margin-top: 10px;
+  color: #000000;
+  font-size: 14px;
+}
